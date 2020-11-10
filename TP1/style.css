@@ -1,0 +1,13 @@
+h2 {
+    color: blue;
+}
+
+.vert {
+    color: green;
+}
+
+.rouge {
+    color: red;
+}
+
+.gras { font-weight: bold;}
