@@ -33,9 +33,9 @@ table.bloc {
     text-align: center;
 }
 
-td {
+/* td {
     border: 1px solid black;
-}
+} */
 
 * {
     font-family: 'Montserrat', sans-serif;
