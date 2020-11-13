@@ -1,63 +1,193 @@
-body{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+:root {
+    --fond-sombre: #303441;
+    --fond-rouge: #eb5055;
+    --fond-gris: #f2f2f2;
+    --couleur-police: #666d89;
 }
 
-header, section, footer{
+body {
+    /* margin: 0; */
+    font-family: 'Roboto', sans-serif;
+    color: var(--couleur-police);
+}
+
+header nav {
+    background-color: var(--fond-sombre);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+
+}
+
+h3{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+p{
+    font-size: 0.8rem;
+}
+
+header, section, footer {
     width: 1020px;
     margin: 0 auto;
 }
 
-section{
-    min-height: 100px;
+section {
+    min-height: 800px;
 }
 
-nav{
-    background-color: black;
-}
-
-nav::after{
-    clear: both;
-    content: "";
-    display: block;
+nav {
+    background-color: var(--fond-sombre);
 }
 
 .logo {
-    float: left;
-    color:white;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
-.main-menu{
-    float:  right;
+.logo span{
+    color: var(--fond-rouge);
+}
+
+.main-menu {
+    float: right;
     margin: 0;
 }
 
-.main-menu li{
+.main-menu li {
     display: inline;
     list-style: none;
 }
 
-.main-menu li a{
+.main-menu li a {
+    text-transform: uppercase;
     text-decoration: none;
-    color: #fff
+    color: var(--couleur-police);
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
-#slider{
+.main-menu li a:hover {
+    color: #fff;
+}
+
+#slider {
     width: 100%;
-    height: 500px;
-    background-color: firebrick;
+    height: 600px;
+    background-color: var(--fond-rouge);
     position: relative;
 }
 
-.telv{
+#services {
+    background-color: var(--fond-gris);
+}
+
+
+#services-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-details {
+    flex-basis: 33%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.service-image {
+    background-image: url("../img/Ellipse.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 59px;
+    flex-basis: 59px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 10px 10px 0 0;
+    position: relative;
+}
+
+.service-image img {
     position: absolute;
-    top: 20px;
-    right: 250px;
+}
+
+.pen {
+    top: 14px;
+    left: 14px;
+}
+
+.bulb {
+    top: 14px;
+    left: 19px;
+}
+
+.heart {
+    top: 16px;
+    left: 14px;
+}
+
+.phone {
+    top: 14px;
+    left: 19px;
+}
+
+.star {
+    top: 14px;
+    left: 14px;
+}
+
+.bubble {
+    top: 16px;
+    left: 14px;
+}
+
+#portfolio {
+    background-color: var(--fond-sombre);
+}
+
+.telv {
+    position: absolute;
+    top: 50px;
+    left: 100px;
 }
 
 .telh {
     position: absolute;
-    top: 130px;
-    right: 200px;
+    top: 170px;
+    right: 110px;
 }
 
+footer {
+    background-color: var(--fond-sombre);
+    color: #fff;
+}
 
+.retour {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    text-decoration: none;
+    background-color: var(--fond-sombre);
+    color: var(--couleur-police);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.retour:hover {
+    color: #fff;
+}
