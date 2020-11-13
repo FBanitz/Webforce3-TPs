@@ -12,16 +12,6 @@ body {
     color: var(--couleur-police);
 }
 
-header nav {
-    background-color: var(--fond-sombre);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
 h2{
     font-size: 1.5rem;
     font-weight: 800;
@@ -37,6 +27,11 @@ h3{
 
 p{
     font-size: 0.8rem;
+    line-height: 1.25rem;
+}
+
+section {
+    min-height: 800px;
 }
 
 header, section, footer {
@@ -44,10 +39,19 @@ header, section, footer {
     margin: 0 auto;
 }
 
-section {
-    min-height: 800px;
+/* header */
+
+header nav {
+    background-color: var(--fond-sombre);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
+ 
 nav {
     background-color: var(--fond-sombre);
 }
@@ -86,12 +90,28 @@ nav {
     color: #fff;
 }
 
+/* Slider */
+
 #slider {
     width: 100%;
     height: 600px;
     background-color: var(--fond-rouge);
     position: relative;
 }
+
+.telv {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.telh {
+    position: absolute;
+    top: 170px;
+    right: 110px;
+}
+
+/* Services */
 
 #services {
     background-color: var(--fond-gris);
@@ -101,6 +121,7 @@ nav {
 #services-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .service-details {
@@ -108,6 +129,7 @@ nav {
     flex-grow: 0;
     flex-shrink: 0;
     display: flex;
+    height: 120px;
 }
 
 .service-image {
@@ -126,32 +148,17 @@ nav {
     position: absolute;
 }
 
-.pen {
+.pen, .star {
     top: 14px;
     left: 14px;
 }
 
-.bulb {
+.bulb, .phone {
     top: 14px;
     left: 19px;
 }
 
-.heart {
-    top: 16px;
-    left: 14px;
-}
-
-.phone {
-    top: 14px;
-    left: 19px;
-}
-
-.star {
-    top: 14px;
-    left: 14px;
-}
-
-.bubble {
+.heart, .bubble {
     top: 16px;
     left: 14px;
 }
@@ -160,17 +167,7 @@ nav {
     background-color: var(--fond-sombre);
 }
 
-.telv {
-    position: absolute;
-    top: 50px;
-    left: 100px;
-}
-
-.telh {
-    position: absolute;
-    top: 170px;
-    right: 110px;
-}
+/* Footer */
 
 footer {
     background-color: var(--fond-sombre);
